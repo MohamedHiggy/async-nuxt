@@ -19,11 +19,11 @@ export default {
 
     loading: {
         color: "red",
-        height: "10px"
+        height: "5px"
     },
 
     // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-    plugins: [],
+    plugins: ['~/plugins/axios'],
 
     // Auto import components (https://go.nuxtjs.dev/config-components)
     components: true,
@@ -41,15 +41,6 @@ export default {
     axios: {
         baseURL: "https://jsonplaceholder.typicode.com"
     },
-    /* router: {
-        extendRoutes(routes, resolve) {
-            routes.push({
-                name: 'blog2',
-                path: '/asd',
-                component: resolve(__dirname, 'pages/blogs.vue')
-            })
-        }
-    }, */
 
     // Build Configuration (https://go.nuxtjs.dev/config-build)
     build: {}
