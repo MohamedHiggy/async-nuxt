@@ -3,12 +3,12 @@
     <div class="posts">
       <div class="post-card" v-for="post in $store.state.posts" :key="post.id">
         <div class="post-card-body">
-          <p class="title"> 
+          <p class="title">
             <nuxt-link :to="`/blogs/${post.id}`" class="title-link">
               <span @click="updateSelectedPost(post)">
                   {{ post.title }}
               </span>
-            </nuxt-link> 
+            </nuxt-link>
           </p>
           <p class="description">{{ post.body }}</p>
         </div>

@@ -8,6 +8,9 @@
         <li class="nav-item">
           <nuxt-link to="/blogs" class="link-tag">Blogs</nuxt-link>
         </li>
+        <li class="nav-item">
+          <nuxt-link to="/form" class="link-tag">form</nuxt-link>
+        </li>
       </ul>
     </nav>
   </header>
